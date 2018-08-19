@@ -9,7 +9,7 @@ style: """
   left: 0
   height: 26px
   width: 100%
-  background-color: #282828
-  opacity: 0.7
+  background-color: #222
+  opacity: 0.9
   z-index: -1
 """

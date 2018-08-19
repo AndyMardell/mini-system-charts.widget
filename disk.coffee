@@ -72,8 +72,8 @@ update: (output, el) ->
     width: chartWidth
 
 style: """
-  left: 150px
-  top: 7px
+  left: 163px
+  top: 5px
 
   color: white
   font: 12px Inconsolata, monospace, Helvetica Neue, sans-serif

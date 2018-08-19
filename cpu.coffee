@@ -51,7 +51,7 @@ update: (output, el) ->
 
 style: """
   left: 10px
-  top: 7px
+  top: 5px
 
   color: white
   font: 12px Inconsolata, monospace, Helvetica Neue, sans-serif

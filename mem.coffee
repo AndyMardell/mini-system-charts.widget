@@ -52,16 +52,16 @@ update: (output, el) ->
 
 
 style: """
-  left: 75px
-  top: 7px
+  left: 84px
+  top: 4px
 
   color: white
   font: 12px Inconsolata, monospace, Helvetica Neue, sans-serif
   -webkit-font-smoothing: antialiased
 
   .number
-    vertical-align top
+    vertical-align: 4px
 
   .chart
-    vertical-align top
+    vertical-align: top
 """

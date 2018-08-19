@@ -8,8 +8,10 @@ require('./assets/lib/piety')($, document)
 
 ## Colors of chart
 colors =
-  in: 'rgb(170, 143, 190)'
-  out: 'rgb(100,202,236)'
+  in: 'rgb(114, 88, 141)'
+  inStroke: 'rgb(170, 143, 190)'
+  out: 'rgb(48,132,181)'
+  outStroke: 'rgb(100,202,236)'
 
 ## Width of chart
 chartWidth = 40
@@ -18,7 +20,7 @@ chartWidth = 40
 dataPointCount = 10
 
 ## Try 'line'!
-chartType = 'bar'
+chartType = 'line'
 
 chartIn = null
 chartOut = null
@@ -51,12 +53,12 @@ update:(output,el) ->
   if not chartIn or not chartOut
     chartIn = $(".chart-in", el).peity chartType,
       fill: [colors.in]
-      stroke: [colors.in]
+      stroke: [colors.inStroke]
       width: chartWidth
 
     chartOut = $(".chart-out", el).peity chartType,
       fill: [colors.out]
-      stroke: [colors.out]
+      stroke: [colors.outStroke]
       width: chartWidth
 
 
@@ -106,8 +108,8 @@ update:(output,el) ->
       $('.number', el).html "#{dataIn}<span style='color: #{colors.in}'>↓</span> #{dataOut}<span style='color: #{colors.out}'>↑</span> #{units}"
 
 style: """
-  left: 200px
-  top: 7px
+  left: 230px
+  top: 6px
 
   color: white
   font: 12px Inconsolata, monospace, Helvetica Neue, sans-serif
@@ -118,5 +120,5 @@ style: """
 
   .number
     vertical-align top
-    width 100px
+    width 110px
 """
