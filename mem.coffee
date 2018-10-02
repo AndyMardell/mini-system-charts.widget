@@ -7,7 +7,7 @@ require('./assets/lib/piety')($, document)
 ## Colors Used by the chart
 colors =
   free: 'rgba(0,0,0,0.3)'
-  inactive: 'rgb(100,202,236)'
+  inactive: 'rgb(85,85,85)'
   active: 'orange'
   wired_down: 'rgb(255,44,37)'
 
